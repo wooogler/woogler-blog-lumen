@@ -41,6 +41,7 @@
     "bluebird": "^3.7.2",
     "classnames": "^2.2.6",
     "codecov": "^3.7.0",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.7",
     "gatsby-link": "^2.4.13",
     "gatsby-plugin-catch-links": "^2.3.11",
@@ -80,6 +81,7 @@
     "react": "^16.13.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.1",
+    "react-facebook": "^8.1.4",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {

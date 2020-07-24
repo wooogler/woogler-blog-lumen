@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import ReactDisqusComments from 'react-disqus-comments';
+import { FacebookProvider, Like as FBLike, Comments as FBComments} from 'react-facebook';
 import { useSiteMetadata } from '../../../hooks';
 
 type Props = {
@@ -9,19 +9,12 @@ type Props = {
 };
 
 const Comments = ({ postTitle, postSlug }: Props) => {
-  const { url, disqusShortname } = useSiteMetadata();
-
-  if (!disqusShortname) {
-    return null;
-  }
+  const { url, facebookAppId } = useSiteMetadata();
 
   return (
-    <ReactDisqusComments
-      shortname={disqusShortname}
-      identifier={postTitle}
-      title={postTitle}
-      url={url + postSlug}
-    />
+    <FacebookProvider appId={facebookAppId}>
+      <FBComments href={url+postSlug}/>
+    </FacebookProvider>
   );
 };
 

@@ -1,12 +1,14 @@
 'use strict';
 
+require('dotenv').config();
+
 module.exports = {
-  url: 'https://wooogler.github.io',
+  url: 'https://woogler.netlify.app',
   pathPrefix: '/',
-  title: 'Woogler blog',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
+  title: "Woogler's blog",
+  subtitle: '백수 이상욱의 블로그입니다.',
+  copyright: '이상욱의 소유, Designed by alxshelepenok',
+  facebookAppId: process.env.FB_APP_ID,
   postsPerPage: 10,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
@@ -30,14 +32,14 @@ module.exports = {
     bio: '현 백수',
     contacts: {
       email: 'leesang627@gmail.com',
-      facebook: 'https://www.facebook.com/woogler/',
-      telegram: '#',
-      twitter: '#',
+      facebook: 'woogler',
+      telegram: '',
+      twitter: '',
       github: 'wooogler',
       rss: '',
       vkontakte: '',
-      linkedin: 'https://www.linkedin.com/in/sangwook-lee/',
-      instagram: '#',
+      linkedin: 'sangwook-lee',
+      instagram: 'sang.woogler',
       line: '',
       gitlab: '',
       weibo: '',

@@ -19,7 +19,7 @@ const Layout = ({
   description,
   socialImage
 }: Props) => {
-  const { author, url } = useSiteMetadata();
+  const { author, url, facebookAppId } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
 
@@ -35,6 +35,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <meta property="fb:app_id" content={facebookAppId} />
       </Helmet>
       {children}
     </div>
