@@ -62,6 +62,21 @@
 
       }
 
+      &-tags {
+        &-link {
+          font-size: $typographic-small-font-size;
+          color: $color-primary;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            color: $color-secondary;
+          }
+        }
+
+      }
+
     }
 
     &-readmore {

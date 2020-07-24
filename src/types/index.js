@@ -23,6 +23,7 @@ export type PageContext = {
 };
 
 export type Node = {
+  excerpt: string,
   fields: {
     slug: string,
     categorySlug?: string,
@@ -34,7 +35,7 @@ export type Node = {
     category?: string,
     tags?: string[],
     title: string,
-    socialImage?: string
+    socialImage?: string,
   },
   html: string,
   id: string

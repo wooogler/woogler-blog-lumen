@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://wooogler.github.io',
   pathPrefix: '/',
   title: 'Woogler blog',
   subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
@@ -12,28 +12,28 @@ module.exports = {
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
-    },
-    {
-      label: 'About me',
+      label: '내 프로필',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: '모든 글',
+      path: '/'
+    },
+    {
+      label: 'Typography',
+      path: '/category/typography'
     }
   ],
   author: {
     name: '이상욱',
-    photo: '/profile.jpg',
-    bio: '포항공과대학교 창의IT융합공학과 졸업',
+    photo: '/photo.png',
+    bio: '현 백수',
     contacts: {
       email: 'leesang627@gmail.com',
       facebook: 'https://www.facebook.com/woogler/',
       telegram: '#',
       twitter: '#',
-      github: 'https://github.com/wooogler',
+      github: 'wooogler',
       rss: '',
       vkontakte: '',
       linkedin: 'https://www.linkedin.com/in/sangwook-lee/',
