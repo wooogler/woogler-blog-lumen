@@ -13,6 +13,7 @@ const Comments = ({ postTitle, postSlug }: Props) => {
 
   return (
     <FacebookProvider appId={facebookAppId}>
+      <FBLike href={url+postSlug} colorScheme="light" share layout='button_count'/>
       <FBComments href={url+postSlug}/>
     </FacebookProvider>
   );
