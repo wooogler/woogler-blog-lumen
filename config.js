@@ -22,8 +22,8 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'Typography',
-      path: '/category/typography'
+      label: '클리앙',
+      path: '/category/클리앙'
     }
   ],
   author: {
